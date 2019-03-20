@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8"> <!-- juego de caracteres que utilizará la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- configura la parte visible de la página -->
+  <meta type="description" content="lorem ipsum...">
+  <!-- esta linea no entra por defecto, sería la descripción que aparece en los motores de búsqueda -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    span {
+      color: blue;
+    }
+
+    div {
+      background: #f00;
+    }
+
+    img {
+      height: 200px;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  tamaño y función
+  <!-- si quitamos la metadata de charset, este texto no se mostraría correctamente -->
+
+  <p>Esto es un parrafo</p>
+
+  <div>
+    Esto es un div
+  </div>
+
+  <span>Esto es un span</span>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, ipsa eius mollitia laudantium repellat natus
+      dicta sunt debitis praesentium, <span>quam quos quia aliquam recusandae deserunt quas</span>. Repellendus soluta
+      laborum quo?</p>
+  </div>
+
+  <h1>header1</h1>
+  <h2>header2</h2>
+  <h3>header3</h3>
+  <h4>header4</h4>
+  <h5>header5</h5>
+  <h6>header6</h6>
+
+  <dl>
+    <!-- Definition List -->
+    <dt>Visual Basic</dt> <!-- Data Title -->
+    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum asperiores laboriosam hic tempore
+      reprehenderit ullam delectus, eligendi cumque possimus. Temporibus maxime mollitia quod perferendis, voluptatibus
+      libero quis eligendi. Facilis, ab!
+    </dd> <!-- Data Definition -->
+    <dt>C#
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam sed magni dolor suscipit minima
+      reprehenderit aliquid accusantium nesciunt deleniti soluta in illum, quaerat, ad necessitatibus. Quos et saepe
+      animi.</dd>
+    </dt>
+  </dl>
+
+  <table border="1px" style="width: 100%;">
+    <thead>
+      <tr>
+        <th colspan="3">Materias</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Programacion I</td>
+        <td>Programacion II</td>
+        <td>Programacion III</td>
+      </tr>
+      <tr>
+        <td rowspan="2">6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <!-- <td>2</td> -->
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+    <!-- <tfoot>
+
+    </tfoot> -->
+  </table>
+
+  <img src="./images/logoHTML5.jpg" alt="logoHTML5" title="LOGOHTML5">
+
+  <pre>
+    <code>
+      function Algo() {
+        console.log("Hole");
+      }
+    </code>
+  </pre>
+
+  <video src="./media/video.mp4" poster="./images/fotoNaturaleza.jpg" controls width="500px"></video>
+
+</body>
+
+</html>
