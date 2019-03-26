@@ -9,3 +9,7 @@ Clases de Laboratorio III UTN FRA
 * JSON
 * Bootstrap
 * Bower
+
+# Extensiones utiles para VSCode
+* Live Server
+* Emmet
