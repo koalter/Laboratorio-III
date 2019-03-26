@@ -10,7 +10,7 @@
     <h1>Formularios</h1>
 
     <!-- action apunta al archivo al que le pega el form, el nombre "#" se usa de comodin -->
-    <form action="#" method="get">
+    <form id="frm1" action="pagina1.php" method="get">
         <p>
         <label for="txtNombre">Nombre: </label>
         <input id="txtNombre" class="" name="" type="text"> 
@@ -21,8 +21,26 @@
             <input type="password" name="password" id="txtClave">
         </p>
         <input type="button" value="un boton">
-        <input type="submit">
+        <input type="submit"> 
+        <!-- el boton de la etiqueta button actua por default de la misma manera que el input submit-->
         <input type="reset">
+    
     </form>
+
+    <script>
+    let txtNombre = document.getElementById('txtNombre');
+    let frm = document.getElementById('frm1');
+
+    frm.addEventListener('submit', manejarSubmit);
+
+    function manejarSubmit(e)
+    {
+        e.preventDefault();
+        alert('Maneje el submit');
+    }
+    // La correcta nomenclatura para las funciones del addEventListener es usar Lambda o funcion anonima
+
+    // Definicion de Callback: llamada de una funcion a otra funcion
+    </script>
 </body>
 </html>
