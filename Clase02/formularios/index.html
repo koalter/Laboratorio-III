@@ -11,20 +11,67 @@
 
     <!-- action apunta al archivo al que le pega el form, el nombre "#" se usa de comodin -->
     <form id="frm1" action="pagina1.php" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="txtNombre">Nombre: </label>
+                <input id="txtNombre" class="" name="nombre" type="text" placeholder="Ingrese su nombre" required> 
+            </p>
+            <!-- name representa el Key, y el contenido del textbox su Value -->
+            <p>
+                <label for="txtClave">Clave: </label>
+                <input type="password" name="password" id="txtClave">
+            </p>
+        </fieldset>
+        
         <p>
-        <label for="txtNombre">Nombre: </label>
-        <input id="txtNombre" class="" name="" type="text"> 
+            <label for="txtEmail">Email: </label>
+            <input type="email" name="email" id="txtEmail">
         </p>
-        <!-- name representa el Key, y el contenido del textbox su Value -->
         <p>
-            <label for="txtClave">Clave: </label>
-            <input type="password" name="password" id="txtClave">
+            <label for="txtEdad">Edad: </label>
+            <input type="number" name="edad" id="txtEdad" min="1" max="10">
+        </p>
+        <p>
+            <label for="txtFoto">Foto: </label>
+            <input type="file" name="foto" id="txtFoto" accept="image/*">
+        </p>
+        <p>
+            <label for="txtFecha">Fecha: </label>
+            <input type="date" name="fecha" id="txtFecha">
         </p>
         <input type="button" value="un boton">
+
+        <select name="" id="">
+            <optgroup label="lenguajes 1">
+                <option value="0">C#</option>
+                <option value="1">Visual Basic</option>
+            </optgroup>
+            <optgroup label="lenguajes 2">
+                <option value="2">JavaScript</option>
+                <option value="3">Java</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="">Masculino<input type="radio" name="sexo" value="M"></label>
+            <label for="">Femenino<input type="radio" name="sexo" value="F"></label>
+        </fieldset>
+
+        <label for="comentarios">Comentarios</label><br>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+
+        <h2>Lab III UTN-FRA todos los derechos reservados &copy;</h2>
+
+        <p>E = m*c<sup>2</sup></p>
+        <p>H<sub>2</sub>O</p>
+        <p><mark>Esto esta subrayado</mark></p>
+
         <input type="submit"> 
         <!-- el boton de la etiqueta button actua por default de la misma manera que el input submit-->
         <input type="reset">
-    
     </form>
 
     <script>
