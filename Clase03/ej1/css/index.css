@@ -1,0 +1,15 @@
+p {
+    color: red;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+#unParrafo {
+    color: #816FFF;
+}
+
+#unDiv {
+    background-color: #1224FA;
+    height: 100px;
+    width: 100px;
+}
