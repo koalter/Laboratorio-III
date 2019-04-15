@@ -1,0 +1,109 @@
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav, footer {
+    background-color: #db008d;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    padding: 1em;
+    width: 12%;
+    text-align: center;
+}
+
+header a, footer a, header nav, footer {
+    color: white;
+}
+
+main h2, .sidebar, .sidebar a {
+    color: #00b9e5;
+}
+
+.button {
+    background-color: #00b9e5;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 16em;
+    float: left;
+    margin-right: 1em;
+}
+
+main {
+    display: flex;
+}
+
+main, footer, header nav, header img {
+    padding: 0 15%;
+}
+
+.articulos {
+    width: 66%;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+.sidebar {
+    width: 33%;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul a {
+    display: block;
+    padding: 1em;
+}
+
+.espaciado {
+    line-height: 2;
+}
+
+.about {
+    display: flex;
+}
+
+.about div {
+    width: 33%;
+    margin-right: 15%;
+    line-height: 1.5;
+}
+
+.about ul {
+    margin: 2em auto;
+}
+
+.about ul a {
+    padding: 1em;
+}
+
+.about ul a:hover, .sidebar ul a:hover, nav a:hover {
+    background-color: #00b9e5;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 0.5em;
+}
