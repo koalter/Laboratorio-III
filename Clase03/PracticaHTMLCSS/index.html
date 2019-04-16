@@ -11,11 +11,23 @@
     <header>
         <img src="./images/logo.png" alt="Blog de Viajes">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Blog</a>
-            <a href="#">Tienda</a>
-            <a href="#">Contacto</a>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Nosotros</a>
+                <ul class="dropdown">
+                    <li class="absolute">Entrada1</li>
+                    <li class="absolute">Entrada2</li>
+                    <li class="absolute">Entrada3</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+                <li class="dropdown">Entrada1</li>
+                <li class="dropdown">Entrada2</li>
+                <li class="dropdown">Entrada3</li>
+            </li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
         </nav>
     </header>
     <main>

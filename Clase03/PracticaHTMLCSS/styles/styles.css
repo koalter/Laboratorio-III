@@ -17,10 +17,15 @@ header nav {
     display: flex;
 }
 
-header nav a {
-    padding: 1em;
-    width: 12%;
+/* header nav li, header nav a { border: 1px solid black;} */
+header nav a { 
+    padding: 1em 3em;
+    position: relative;
+}
+
+header nav li { 
     text-align: center;
+    list-style-type: none;
 }
 
 header a, footer a, header nav, footer {
@@ -51,7 +56,7 @@ main {
 }
 
 main, footer, header nav, header img {
-    padding: 0 15%;
+    padding: 1em 15%;
 }
 
 .articulos {
@@ -107,3 +112,15 @@ main, footer, header nav, header img {
 footer {
     padding-bottom: 0.5em;
 }
+
+.dropdown {
+    display: none;
+}
+
+nav li:hover >ul {
+    display: block;
+}
+
+/* .absolute {
+    position: absolute;
+} */
