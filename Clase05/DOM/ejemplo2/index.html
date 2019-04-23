@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Ejemplo 2</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            let lista = document.getElementsByTagName("ul")[0];
+            var hijos = lista.childNodes;
+            //console.log(hijos.length);
+
+            for (let i = 0; i < hijos.length; i++) {
+                if (hijos[i].nodeType == Node.ELEMENT_NODE) {
+                    console.log(hijos[i].textContent);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

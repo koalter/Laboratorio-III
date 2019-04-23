@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            //alert("Hola!");
+            let lista = document.getElementsByTagName("ul")[0];
+            let hijos = lista.children;
+            //console.log(lista); // podremos ver el elemento en su forma de html
+            //console.log(lista.childElementCount); // nos da la cantidad de elementos hijos
+            //console.log(lista.children); // nos devuelve un array
+            // lista.childNodes.forEach(element => {
+            //     console.log(element);
+            // });
+            for (let i = 0; i < hijos.length; i++) {
+                console.log(hijos[i].childNodes[0].nodeValue);
+            }
+        }
+    </script>
+</body>
+</html>
