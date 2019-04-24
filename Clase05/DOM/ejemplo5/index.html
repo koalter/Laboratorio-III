@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Ejemplo 5</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <div id="miDiv"></div>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            let div = document.getElementById("miDiv");
+            let parrafo = document.createElement('p');
+            let texto = document.createTextNode('Hola mundo');
+
+            parrafo.appendChild(texto);
+            div.appendChild(parrafo);
+        }
+    </script>
+</body>
+</html>

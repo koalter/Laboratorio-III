@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Ejemplo 3</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+    </div>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            let lista = document.getElementsByTagName("ul")[0];
+            let padre = lista.parentNode;
+            let primerHijo = lista.firstElementChild;
+            let ultimoHijo = lista.lastElementChild; 
+            
+            //padre.style.backgroundColor = 'blue';
+
+            while (primerHijo != null) {
+                console.log(primerHijo.textContent);
+                primerHijo = primerHijo.nextElementSibling;
+            }
+        }
+    </script>
+</body>
+</html>

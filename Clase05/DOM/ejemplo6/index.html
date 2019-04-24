@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Ejemplo 6</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <div id="miDiv"><img src="./fotoNaturaleza.jpg" alt="una foto de playa"></div>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            let div = document.getElementById("miDiv");
+            // let imagen = document.createElement('img');
+
+            // imagen.setAttribute('src', './fotoNaturalez.jpg');
+            // imagen.setAttribute('alt', 'una foto de playa');
+            // div.appendChild(imagen);
+
+            let imagen = document.querySelector("img");
+            if (imagen.hasAttribute('src')) {
+                imagen.removeAttribute('src');
+            } else {
+                console.log("No tiene ese atributo");
+            }
+        }
+    </script>
+</body>
+</html>

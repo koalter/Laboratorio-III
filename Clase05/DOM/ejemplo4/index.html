@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Ejemplo 4</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+
+    <p id="p1">Esto es un parrafo</p>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+        let btn = document.getElementById("btnEjecutar");
+
+        btn.addEventListener("click", Ejecutar);
+
+        function Ejecutar() {
+            let p1 = document.getElementById("p1");
+            let nodoTexto = document.createTextNode('Hola mundo');
+            
+            p1.appendChild(nodoTexto);
+
+            console.log(p1.childNodes.length);
+        }
+    </script>
+</body>
+</html>
