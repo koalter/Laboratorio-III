@@ -10,7 +10,9 @@ function cargarTabla() {
     let tabla = document.createElement('table');
 
     tabla.setAttribute('border', '1px solid black');
-
+    tabla.setAttribute('style', 'border-collapse: collapse');
+    tabla.setAttribute('width', '700px');
+    
     let cabecera = document.createElement('tr');
 
     for (let key in personas[0]) {
@@ -27,6 +29,7 @@ function cargarTabla() {
         
         for (let j in personas[i]) {
             let celda = document.createElement('td');
+            celda.setAttribute('style', 'text-align: center');
             let dato = document.createTextNode(personas[i][j]);
             
             celda.appendChild(dato);
@@ -37,4 +40,8 @@ function cargarTabla() {
     }
 
     div.appendChild(tabla);
+
+    let body = document.getElementsByTagName("body");
+    let btnTabla = document.getElementById("btnTabla");
+    body[0].removeChild(btnTabla);
 }
