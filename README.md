@@ -17,3 +17,5 @@ Clases de Laboratorio III UTN FRA
 # Links utiles
 * https://developer.mozilla.org/es/docs/Web/HTML/Elemento
 * https://mockaroo.com/
+* https://picsum.photos/
+* https://icons8.com/preloaders/
