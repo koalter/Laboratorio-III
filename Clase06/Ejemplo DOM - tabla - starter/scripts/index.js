@@ -4,7 +4,7 @@ function cargarTabla() {
     let body = document.getElementsByTagName('body')[0];
     let i = 0;
     let j = 0;
-    let indiceConMasClaves;
+    let objetoConMasClaves;
     
     // Sacamos el indice mayor
     for (let index in data) { //console.log(index);
@@ -15,15 +15,16 @@ function cargarTabla() {
         
         if (j > i) {
             i = j;
-            indiceConMasClaves = index;
+            objetoConMasClaves = data[index];
         }
     }
+    
     
     let tabla = document.createElement('table');
     let header = document.createElement('tr');
     
     // Generamos la cabecera de la tabla
-    for (let key in data[indiceConMasClaves]) {
+    for (let key in objetoConMasClaves) {
         let fila = document.createElement('th');
         fila.innerText = key;
         header.appendChild(fila);
@@ -34,7 +35,7 @@ function cargarTabla() {
     for (let index in data) {
         let fila = document.createElement('tr');
 
-        for (let key in data[index]) {
+        for (let key in objetoConMasClaves) {
             let registro = document.createElement('td');
             registro.innerText = data[index][key];
             fila.appendChild(registro);
