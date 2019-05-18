@@ -1,18 +1,48 @@
-var xhr;
-window.addEventListener('load', traerObjeto);
+window.addEventListener('load', cargarTabla);
 
-function traerObjeto() {
-    xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = procesar;
-    let cadena = 'http://localhost:3000/traer?collection=objeto';
-    xhr.open('GET', cadena, true);
-    xhr.send();
-}
-
-function procesar() {
-    if (xhr.readyState == 4) {
-        if (xhr.status == 200) {
-            console.log(JSON.parse(xhr.responseText));
+function cargarTabla() {
+    let body = document.getElementsByTagName('body')[0];
+    let i = 0;
+    let j = 0;
+    let indiceConMasClaves;
+    
+    // Sacamos el indice mayor
+    for (let index in data) { //console.log(index);
+        j = 0;
+        
+        for (let key in data[index]) //console.log(key);
+        j++;
+        
+        if (j > i) {
+            i = j;
+            indiceConMasClaves = index;
         }
     }
+    
+    let tabla = document.createElement('table');
+    let header = document.createElement('tr');
+    
+    // Generamos la cabecera de la tabla
+    for (let key in data[indiceConMasClaves]) {
+        let fila = document.createElement('th');
+        fila.innerText = key;
+        header.appendChild(fila);
+    }
+    tabla.appendChild(header);
+
+    // Generamos los registros
+    for (let index in data) {
+        let fila = document.createElement('tr');
+
+        for (let key in data[index]) {
+            let registro = document.createElement('td');
+            registro.innerText = data[index][key];
+            fila.appendChild(registro);
+        }
+        
+        tabla.appendChild(fila);
+    }
+    
+
+    body.appendChild(tabla);
 }
