@@ -9,6 +9,8 @@ Clases de Laboratorio III UTN FRA
 * JSON
 * Bootstrap
 * Bower
+* Yarn
+* npm
 
 # Extensiones utiles para VSCode
 * Live Server
@@ -19,3 +21,5 @@ Clases de Laboratorio III UTN FRA
 * https://mockaroo.com/
 * https://picsum.photos/
 * https://icons8.com/preloaders/
+* https://yarnpkg.com/lang/en/
+* https://getbootstrap.com/
