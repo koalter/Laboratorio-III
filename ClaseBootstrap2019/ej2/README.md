@@ -1,0 +1,1 @@
+# Configuracion multiple de columnas

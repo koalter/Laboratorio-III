@@ -1,0 +1,14 @@
+/* Dentro de la carpeta de nuestra app */
+
+npm install yarn -g
+
+yarn init -y
+
+yarn add bootstrap
+
+/* Si tenemos que pasar el proyecto a otra persona, solo copiamos nuestros archivos mas
+ * package.json y yarn.lock.
+ * Luego una vez transferidos ejecutamos el siguiente comando para que instale 
+ * automaticamente todos los paquetes necesarios.
+ */
+yarn install
