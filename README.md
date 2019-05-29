@@ -23,3 +23,4 @@ Clases de Laboratorio III UTN FRA
 * https://icons8.com/preloaders/
 * https://yarnpkg.com/lang/en/
 * https://getbootstrap.com/
+* https://jquery.com/
