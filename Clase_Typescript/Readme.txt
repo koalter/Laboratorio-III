@@ -17,3 +17,7 @@ Parametros para tsc:
 
 Crear un archivo de configuracion para ts:
     'tsc --init'
+
+'npm init' -> Crea el archivo package.json
+'npm install jquery --save' instala jquery y lo agrega al package.json
+'npm install @types/jquery --save' instala algunos modulos extra para jquery (p.ej el uso de $) 
